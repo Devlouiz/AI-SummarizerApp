@@ -13,14 +13,14 @@ const Demo = () => {
 
   const [getSummary,{error,isFetching}] = useLazyGetSummaryQuery()
 
-  /*useEffect(() => {
+  useEffect(() => {
     const articleFromlocalstorage = JSON.parse(
       localStorage.getItem('article')
     )
     if (articleFromlocalstorage){
       setAllArticles(articleFromlocalstorage)
     }
-  },[])*/
+  },[])
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
